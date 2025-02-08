@@ -9,16 +9,19 @@
   
   .icon {
     position: absolute;
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
   }
   
   .hidden {
-    opacity: 0;  }
+    opacity: 0;
+    transform: scale(0.8); 
+  }
   
   .visible {
     opacity: 1;
-
+    transform: scale(1); 
   }
+  
 
 .logo {
     width: 100;
@@ -37,3 +40,113 @@
     align-items: center !important;
     width: 100%;
 }
+/* Navbar link styles */
+.navbar .nav-link {
+  color: #333; /* Default text color */
+  text-decoration: none; /* Remove underline */
+  position: relative;
+  padding: 5px 15px; /* Adjust padding */
+  overflow: hidden; /* To contain the underline effect */
+  font-size: 1.2rem;
+}
+
+/* Navbar link styles */
+.navbar .nav-link {
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 15px;
+}
+
+/* Sliding border effect */
+.navbar .nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #007bff, #6a0dad); /* Blue to Purple gradient */
+  transition: width 0.3s ease; /* Smooth transition */
+}
+
+/* On hover, slide the border in */
+.navbar .nav-link:hover::before {
+  width: 100%;
+}
+
+.offcanvas-header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the logo */
+  width: 100%;
+}
+
+.offcanvas-header .btn-close {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  transition: transform 0.3s ease; /* Smooth rotation transition */
+}
+
+.offcanvas-header .btn-close:hover {
+  transform: rotate(90deg); /* Rotate 180 degrees on hover */
+}
+
+
+/* Sidebar (Offcanvas) Link Styles */
+.offcanvas .nav-link {
+  font-size: 1.3rem;
+  color: #555;
+  position: relative; /* Ensure that we can use background-clip on the text */
+
+}
+
+.offcanvas .nav-link:hover {
+  background-image: linear-gradient(90deg, #007bff, #6a0dad); /* Apply gradient */
+  -webkit-background-clip: text; /* Ensure gradient is clipped to text */
+  background-clip: text; /* Apply gradient to text */
+  color: transparent; /* Make the text itself transparent */
+  text-decoration: none; /* Remove underline */
+}
+.offcanvas-body {
+  display: flex;
+  align-items: center;
+
+}
+.offcanvas{
+  background-color: #B6BAC3;
+}
+.line-divider {
+  width: 250%;
+  border-bottom: 2px solid #333; /* Solid line */
+  margin-top: 20px; /* Adjust if needed */
+  box-sizing: border-box; /* Ensure padding/borders are included in the width calculation */
+}
+.social-icon {
+  font-size: 30px;
+  color: black;
+  padding: 10px;
+  transition:transform 0.3s ease; /* Smooth transition for color and scale */
+}
+
+.social-icon:hover {
+  transform: scale(1.3); /* Smooth scaling */
+}
+
+.line-divider {
+  width: 100%;
+  margin-top: 20px;
+  position: relative; /* To position the pseudo-element */
+}
+
+.line-divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Height of the "border" */
+  background: linear-gradient(90deg, #007bff, #6a0dad); /* Blue to Purple gradient */
+}
+
