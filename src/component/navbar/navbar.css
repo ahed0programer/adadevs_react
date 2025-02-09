@@ -96,7 +96,7 @@
 
 /* Sidebar (Offcanvas) Link Styles */
 .offcanvas .nav-link {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #555;
   position: relative; /* Ensure that we can use background-clip on the text */
 

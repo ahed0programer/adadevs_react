@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Button } from "react-bootstrap";
 import { HiOutlineBars3CenterLeft, HiOutlineBars3 } from "react-icons/hi2";
-import { FaFacebookSquare, FaInstagram, FaLinkedin   } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram, FaLinkedin ,FaGithub  } from "react-icons/fa";
 import logo from './logo.png';
 import "./navbar.css";
 
@@ -84,6 +84,9 @@ export default function MyNavbar() {
       </a>
       <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
       <FaLinkedin />
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+      <FaGithub />
       </a>
     </div>
   </Offcanvas.Body>
