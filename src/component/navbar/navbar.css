@@ -43,9 +43,9 @@ button {
 /* Navbar link styles */
 .navbar .nav-link {
   color: #333; /* Default text color */
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
   position: relative;
-  padding: 5px 15px; /* Adjust padding */
+  margin-inline: 8px;
   overflow: hidden; /* To contain the underline effect */
   font-size: 1.2rem;
 }

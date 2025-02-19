@@ -50,22 +50,32 @@ export default function MyNavbar() {
           </Button>
           <Nav className="me-auto d-none d-md-flex ps-5">
             <Nav.Item>
-              <Link to="#home" className="nav-link">
+              <Link to="/" className="nav-link">
                 Home
               </Link>
             </Nav.Item>
             <Nav.Item>
-              <Link to="#features" className="nav-link">
-                Features
+              <Link to="/website" className="nav-link">
+                Website-Creation
               </Link>
             </Nav.Item>
             <Nav.Item>
-              <Link to="#pricing" className="nav-link">
-                Pricing
+              <Link to="/natural" className="nav-link">
+                Natural-Referencing
               </Link>
             </Nav.Item>
             <Nav.Item>
-              <Link to="#contact" className="nav-link">
+              <Link to="/gdpr" className="nav-link">
+                GDPR
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link to="/news" className="nav-link">
+                News
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link to="/contact" className="nav-link">
                 Contact
               </Link>
             </Nav.Item>
@@ -81,38 +91,44 @@ export default function MyNavbar() {
             <img src={logo} alt="logo" className="logo img-fluid pt-4" />
           </div>
         </Offcanvas.Header>
-        <Offcanvas.Body className="flex-column">
-          <Nav className="flex-column">
+        <Offcanvas.Body className="flex-column ">
+          <Nav className="flex-column align-items-center">
             <Nav.Item>
-              <Link
-                to="#home"
-                className="nav-link"
-                onClick={() => setShow(false)}
-              >
+              <Link to="/" className="nav-link" onClick={() => setShow(false)}>
                 Home
               </Link>
             </Nav.Item>
             <Nav.Item>
               <Link
-                to="#features"
+                to="/website"
                 className="nav-link"
                 onClick={() => setShow(false)}
               >
-                Features
+                Website-Creation
               </Link>
             </Nav.Item>
             <Nav.Item>
               <Link
-                to="#pricing"
+                to="/natural"
                 className="nav-link"
                 onClick={() => setShow(false)}
               >
-                Pricing
+                Natural-Referencing
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link to="/gdpr" className="nav-link">
+                GDPR
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Link to="/news" className="nav-link">
+                News
               </Link>
             </Nav.Item>
             <Nav.Item>
               <Link
-                to="#contact"
+                to="/contact"
                 className="nav-link"
                 onClick={() => setShow(false)}
               >
