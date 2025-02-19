@@ -1,0 +1,7 @@
+footer {
+  background-color: #b6bac3;
+}
+.custom-hr {
+  height: 4px;
+  background: linear-gradient(90deg, #007bff, #6a0dad);
+}

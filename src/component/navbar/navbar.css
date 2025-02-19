@@ -1,44 +1,43 @@
 .icon-container {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .icon {
-    position: absolute;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  
-  .hidden {
-    opacity: 0;
-    transform: scale(0.8); 
-  }
-  
-  .visible {
-    opacity: 1;
-    transform: scale(1); 
-  }
-  
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  position: absolute;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hidden {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.visible {
+  opacity: 1;
+  transform: scale(1);
+}
 
 .logo {
-    width: 100;
-    height: 100;
-  }
-  .mynav {
-    background-color: #B6BAC3 ;
-  }
-  button{
-    background-color: transparent !important;
-    border: none !important;
-  }
-  .navcontainer {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    width: 100%;
+  width: 100;
+  height: 100;
+}
+.mynav {
+  background-color: #b6bac3;
+}
+button {
+  background-color: transparent !important;
+  border: none !important;
+}
+.navcontainer {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100%;
 }
 /* Navbar link styles */
 .navbar .nav-link {
@@ -60,13 +59,17 @@
 
 /* Sliding border effect */
 .navbar .nav-link::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #007bff, #6a0dad); /* Blue to Purple gradient */
+  background: linear-gradient(
+    90deg,
+    #007bff,
+    #6a0dad
+  ); /* Blue to Purple gradient */
   transition: width 0.3s ease; /* Smooth transition */
 }
 
@@ -93,17 +96,19 @@
   transform: rotate(90deg); /* Rotate 180 degrees on hover */
 }
 
-
 /* Sidebar (Offcanvas) Link Styles */
 .offcanvas .nav-link {
   font-size: 1.5rem;
   color: #555;
   position: relative; /* Ensure that we can use background-clip on the text */
-
 }
 
 .offcanvas .nav-link:hover {
-  background-image: linear-gradient(90deg, #007bff, #6a0dad); /* Apply gradient */
+  background-image: linear-gradient(
+    90deg,
+    #007bff,
+    #6a0dad
+  ); /* Apply gradient */
   -webkit-background-clip: text; /* Ensure gradient is clipped to text */
   background-clip: text; /* Apply gradient to text */
   color: transparent; /* Make the text itself transparent */
@@ -112,22 +117,15 @@
 .offcanvas-body {
   display: flex;
   align-items: center;
-
 }
-.offcanvas{
-  background-color: #B6BAC3;
-}
-.line-divider {
-  width: 250%;
-  border-bottom: 2px solid #333; /* Solid line */
-  margin-top: 20px; /* Adjust if needed */
-  box-sizing: border-box; /* Ensure padding/borders are included in the width calculation */
+.offcanvas {
+  background-color: #b6bac3;
 }
 .social-icon {
   font-size: 30px;
   color: black;
   padding: 10px;
-  transition:transform 0.3s ease; /* Smooth transition for color and scale */
+  transition: transform 0.3s ease; /* Smooth transition for color and scale */
 }
 
 .social-icon:hover {
@@ -141,12 +139,15 @@
 }
 
 .line-divider::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 2px; /* Height of the "border" */
-  background: linear-gradient(90deg, #007bff, #6a0dad); /* Blue to Purple gradient */
+  background: linear-gradient(
+    90deg,
+    #007bff,
+    #6a0dad
+  ); /* Blue to Purple gradient */
 }
-
