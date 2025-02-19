@@ -1,6 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
-body{
-    padding: 0;
-    margin: 0;
-    font-family: "Fira Code", sans-serif !important;
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Fira Code", sans-serif !important;
+}
+:root {
+  --body-background: #b6bac3;
+  --title: black;
+  --primary: blue;
+}
+[data-theme="light"] {
+  --body-background: #b6bac3;
+  --title: black;
+  --primary: blue;
+}
+[data-theme="dark"] {
+  --body-background: #b6bac3;
+  --title: white;
+  --primary: blue;
 }

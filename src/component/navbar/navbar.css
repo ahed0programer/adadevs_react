@@ -27,7 +27,8 @@
   height: 100;
 }
 .mynav {
-  background-color: #b6bac3;
+  /*background-color: #b6bac3;*/
+  background-color: var(--body-background);
 }
 button {
   background-color: transparent !important;

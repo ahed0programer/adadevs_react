@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link
-import Container from "react-bootstrap/Container";
+import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
@@ -14,10 +13,11 @@ import {
 } from "react-icons/fa";
 import logo from "./logo.png";
 import "./navbar.css";
+import ThemeToggler from "../themeToggler/themeToggler";
 
 export default function MyNavbar() {
   const [show, setShow] = useState(false);
-  const [hover, setHover] = useState(false); // State to track hover
+  const [hover, setHover] = useState(false);
 
   return (
     <>
@@ -69,6 +69,7 @@ export default function MyNavbar() {
                 Contact
               </Link>
             </Nav.Item>
+            <ThemeToggler />
           </Nav>
         </div>
       </Navbar>
