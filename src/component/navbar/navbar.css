@@ -2,9 +2,7 @@
   position: relative;
   width: 30px;
   height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: auto;
 }
 
 .icon {
@@ -27,8 +25,7 @@
   height: 100;
 }
 .mynav {
-  /*background-color: #b6bac3;*/
-  background-color: var(--body-background);
+  background-color: #b6bac3;
 }
 button {
   background-color: transparent !important;

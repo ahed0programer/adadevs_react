@@ -23,11 +23,11 @@ export default function MyNavbar() {
     <>
       <Navbar className="mynav">
         <div className="navcontainer">
-          <Navbar.Brand as={Link} to="#home">
+          <Navbar.Brand as={Link} to="/">
             <img
               src={logo}
               alt="logo"
-              className="logo pe-5 img-fluid"
+              className="logo  img-fluid"
               width={250}
             />
           </Navbar.Brand>

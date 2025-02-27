@@ -9,26 +9,21 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--body-background);
 }
 
 .main-content {
   flex: 1;
 }
 
-:root {
-  --body-background: #b6bac3;
-  --title: black;
-  --primary: blue;
-  --theme-button: #f39c12;
-}
 [data-theme="light"] {
-  --body-background: #b6bac3;
+  --body-background: #f8f9fa;
   --title: black;
   --primary: blue;
   --theme-button: #f39c12;
 }
 [data-theme="dark"] {
-  --body-background: #b6bac3;
+  --body-background: #f8f9fa;
   --title: white;
   --primary: blue;
   --theme-button: #a2caff;
