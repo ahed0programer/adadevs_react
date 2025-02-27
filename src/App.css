@@ -2,20 +2,34 @@
 body {
   padding: 0;
   margin: 0;
+  height: 100%;
   font-family: "Fira Code", sans-serif !important;
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
 :root {
   --body-background: #b6bac3;
   --title: black;
   --primary: blue;
+  --theme-button: #f39c12;
 }
 [data-theme="light"] {
   --body-background: #b6bac3;
   --title: black;
   --primary: blue;
+  --theme-button: #f39c12;
 }
 [data-theme="dark"] {
   --body-background: #b6bac3;
   --title: white;
   --primary: blue;
+  --theme-button: #a2caff;
 }

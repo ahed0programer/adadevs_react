@@ -45,20 +45,11 @@ button {
   color: #333; /* Default text color */
   text-decoration: none;
   position: relative;
-  margin-inline: 8px;
-  overflow: hidden; /* To contain the underline effect */
+  padding: 5px 15px;
   font-size: 1.2rem;
 }
 
-/* Navbar link styles */
-.navbar .nav-link {
-  color: #333;
-  text-decoration: none;
-  position: relative;
-  padding: 5px 15px;
-}
-
-/* Sliding border effect */
+/* Sliding border effect on hover */
 .navbar .nav-link::before {
   content: "";
   position: absolute;
@@ -66,15 +57,11 @@ button {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(
-    90deg,
-    #007bff,
-    #6a0dad
-  ); /* Blue to Purple gradient */
-  transition: width 0.3s ease; /* Smooth transition */
+  background: linear-gradient(90deg, #007bff, #6a0dad);
+  transition: width 0.3s ease;
 }
 
-/* On hover, slide the border in */
+/* On hover, show underline */
 .navbar .nav-link:hover::before {
   width: 100%;
 }
